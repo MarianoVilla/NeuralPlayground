@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralPlayground.ConsoleApp", "NeuralPlayground.ConsoleApp\NeuralPlayground.ConsoleApp.csproj", "{3453705F-9871-4261-A4B6-9E7997966C01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoeAlbahariNeuralExample", "JoeAlbahariNeuralExample\JoeAlbahariNeuralExample.csproj", "{F8E25DF4-107A-45DE-9B77-E4498E0CD208}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "NeuralPlayground.PythonConsole", "NeuralPlayground.PythonConsole\NeuralPlayground.PythonConsole.pyproj", "{D7D5B77C-B3A6-4B70-8463-2F0D9274C124}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3453705F-9871-4261-A4B6-9E7997966C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3453705F-9871-4261-A4B6-9E7997966C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3453705F-9871-4261-A4B6-9E7997966C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3453705F-9871-4261-A4B6-9E7997966C01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E25DF4-107A-45DE-9B77-E4498E0CD208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E25DF4-107A-45DE-9B77-E4498E0CD208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E25DF4-107A-45DE-9B77-E4498E0CD208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E25DF4-107A-45DE-9B77-E4498E0CD208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7D5B77C-B3A6-4B70-8463-2F0D9274C124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7D5B77C-B3A6-4B70-8463-2F0D9274C124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {641EDF35-EC72-4291-8B35-41EAC1AE64D2}
+	EndGlobalSection
+EndGlobal
