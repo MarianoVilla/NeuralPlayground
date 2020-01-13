@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoeAlbahariNeuralExample", 
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "NeuralPlayground.PythonConsole", "NeuralPlayground.PythonConsole\NeuralPlayground.PythonConsole.pyproj", "{D7D5B77C-B3A6-4B70-8463-2F0D9274C124}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NeuralPlayground.JSConsole", "NeuralPlayground.JSConsole\NeuralPlayground.JSConsole.njsproj", "{495C6191-9B47-4524-91EA-3501C64E5220}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{F8E25DF4-107A-45DE-9B77-E4498E0CD208}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D7D5B77C-B3A6-4B70-8463-2F0D9274C124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D7D5B77C-B3A6-4B70-8463-2F0D9274C124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495C6191-9B47-4524-91EA-3501C64E5220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495C6191-9B47-4524-91EA-3501C64E5220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495C6191-9B47-4524-91EA-3501C64E5220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495C6191-9B47-4524-91EA-3501C64E5220}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

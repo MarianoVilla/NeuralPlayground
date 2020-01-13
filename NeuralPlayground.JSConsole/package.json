@@ -1,0 +1,9 @@
+{
+  "name": "neural-playground.jsconsole",
+  "version": "0.0.0",
+  "description": "NeuralPlayground.JSConsole",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}
