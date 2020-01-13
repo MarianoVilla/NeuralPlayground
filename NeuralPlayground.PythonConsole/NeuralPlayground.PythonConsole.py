@@ -1,3 +1,4 @@
+
 import numpy
 
 #Our initial neural net.
@@ -18,7 +19,24 @@ def NN(m1, m2, w1, w2, b):
 #The effect is simple: since we have a quadratic function (i.e., a parabola), the further the prediction is from the target, the higher the cost.
 #If we were to only try to minimize the difference between the prediction and the target, we would infinitely minimize it.
 #That is to say that, if our logic is "the lesser the better", our function would get stucked going down forever. So instead we use the squared error: (n)^2 is always positive.
-#https://www.freecodecamp.org/news/machine-learning-mean-squared-error-regression-line-c7dde9a26b93/
+
+#A nice article on the mean squared error (MSE) function: https://www.freecodecamp.org/news/machine-learning-mean-squared-error-regression-line-c7dde9a26b93/
+#Mainly, we have a line defined by a simple linear equation: y = mx+b.
+#The goal is to find the values for m (the slope) and b (the y-intercept) that minimize the mean of the squared error of every data point with respect to our line.
+
+#To find it, we use some equations, that come down to, in pseudocode:
+# Slope = m = (xy' x'y') / (x^2)' - (x')^2
+# Y-intercept = b = y' - mx'
+
+#Having the next equations for each piece:
+# x' = sum_every(x) / n
+# y' = sum_every(y) / n
+# xy' = sum_every(xy) / n
+# (x^2)' = sum_every(x^2) / n
+#Note: sum_every(n), as you might infeer, is equivalent to a sigma on the parameter.
+
+
+
 #https://youtu.be/c6NBkkKNZXw?list=PLxt59R_fWVzT9bDxA76AHm3ig0Gg9S3So
 def cost(prediction, target):
     return (prediction - target) ** 2
