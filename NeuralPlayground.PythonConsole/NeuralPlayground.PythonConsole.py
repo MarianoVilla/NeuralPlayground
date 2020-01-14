@@ -1,3 +1,29 @@
+#A neural network, I've come to realize after reasearching a bit, is a brute force solution to emulate knowledge-based behavior.
+#At first glance, I expected it to be more similar to actual AI (although I haven't quite defined that term). Instead, I found neural networks to be more similar to a correlation machine than anything else.
+#The question arises: but how do it know? And the answer, as with electronics, is: it doesn't. NNs emulate the external appeareance of intelligent decision making.
+#An introspective research indicates that a semantic training has to be made in order to emulate more complex forms of intelligence, such as ours.
+#How do I know that a chair is a chair? Image processing is a step for sure, but that has to be couped with a symbolic appreciation of the input.
+#These symbolic connotations seem to pair with a functional, utilitarian perspective. I know that a chair has to be usable in a certain way; i.e., I have to be able to sit on it.
+#Hence, besides the interpretation of luminic stimuli, there's a verbal knowledge that stands close to it, putting a "what can this do"; or rather "what can I do with this?".
+#That quick fix, tho, would give any object with a fairly plane surface a chair. Even if we combined the image interpretation, which would naturally filter some of the more grotesquely non-chair objects,
+#we would still have to bear with a large amount of chair-like objects being incorrectly classified as such.
+#That's problematic. Turning to myself again, I ask: how do I know that, for instance, this box is not a chair?
+#Well, it looks like I have an alternative category for that box, which seems stronger on it than the chair one.
+#I'm unsure wheather we're talking of an effective negative knowledge (i.e., that isn't a chair), or a stronger afirmation (i.e., that is a box).
+#Once again, functional semantics come in to rescue: I know that boxes are mainly used for storing/transporting thing rather than sitting.
+#There's an evolutonary background to this: storing, saving, the effectiveness of boxes as containers rather than chairs. 
+#All of this seems to be pointing towards a mediate knowledge base; that is, a filogenic preprocessing of the object I'm seing.
+#That's a weird outcome, actually, because it directs us once again towards a sort of unconscious understanding.
+#What I mean is that I don't necessarily have to know every bit of background on the decision to make boxes containers rather than chairs.
+#There's a leap of faith there: I've been told that boxes are better containers than chairs, and I blindly trust in that saying, and use it in my decision process as an ethereal database.
+#Indeed, this nice article homes.cs.washington.edu/~pedrod/papers/cacm12.pdf states that "Every learner must embody some knowledge or assumptions beyond the data it is given in order to generalize beyond".
+
+#(One thing that has got me thinking is if the functional approach isn't reductionist. But after going around it for a while, I came to realize that a N-to-1 mapping (a function) is effectively what's going on in cognition.
+#My reasoning works around the fundamental pilars of onthology: the principles of identity and no contradiction. Simply because a thing is identical to itself, and a thing cannot be itself and its opposite at the same time.
+#Hence, although being achieved through a dynamic and complex evaluation process, no matter how many the features or how complex the function of a class may be, a recognition has to end in a value, or at least an uncertainty, both of which go well with our thought principles.
+#Still, an important factor to keep in mind is that the more features and odd relations they have in a class's function, the more expensive the computation process of its classification.)
+
+
 
 import numpy
 

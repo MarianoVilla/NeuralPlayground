@@ -1,4 +1,5 @@
 import numpy as np
+#Lecture: http://cs231n.github.io/classification/
 #A first approach to image recognition is a nearest neighbor classifier.
 #This simple compares the given input to every other image it has trained with,
 #and uses the label of the nearest, defining closenes by pixel-wise arithmetic.
