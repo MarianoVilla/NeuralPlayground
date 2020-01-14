@@ -1,6 +1,7 @@
 
 import numpy
 
+
 #Our initial neural net.
 def NN(m1, m2, w1, w2, b):
     #Default initial values.
@@ -60,11 +61,63 @@ def slope(b):
 
 
 
-#region Activators.
+#region Activation.
 
-#Sigmoid activator, the classical example. Nowadays, ReLU is much more common, mostly due to the high computational cost of sigmoid.
+#The activation function is the part of an AN that "decides" wheather the (weighed sum + bias) result of the input should "fire" the neuron.
+#The simplest approach is a threshold based function, that returns 1 is the input is higher than a given threshold and 0 otherwise.
+#That could be defined as a one liner step function:
+def simple_threshhold(input):
+    return 1 if(input > threshold) else 0
+#This is useful if we're dealing with pure binary decision logic, but in most cases we'll need a soft activation function.
+#To achieve that analog-like decision making, we can't simply use a linear function (f(x) = cx),
+#'cause that would devoid the purpose of the feedback, being c a constant.
+#That's when we arrive to sigmoid, an "S"-shaped, step-like function.
+
+#Sigmoid activator, the classical example, is defined as: f(x) = 1 / 1 + exp(-x).
+#Nowadays, ReLU is much more common, mostly due to the high computational cost of sigmoid.
 def sigmoid(x):
     return 1/(1 + numpy.exp(-x))
+#Sigmoid allows a step-like, constrained set of outputs, but keeping the analog movement to allow gradual responses.
+
+#An evident issue with sigmoid is that the gradient tends to zero when x is both huge or small, which makes our correction rate equally tiny.
+
+#Sigmoid's problems:
+# * Vanishing gradient.
+# * Non-zero centered output.
+# * Sigmoids saturate and kill gradients.
+# * Slow convergence.
+# * exp(x) is computationally expensive.
+
+#A solution is scaling sigmoid. That gives us the hyperbolic tangent (tahn) function, which is purely: f(x) = 1 - exp(-2x) / 1 + exp(-2x).
+#In terms of sigmoid, tahn is: tahn(x) = 2.sigmoid(2x) - 1
+#Tahn solves the non-zero centered problem, but still has a vanishing gradient.
+
+#ReLU (Rectified Linear Units) is a much more popular activation function. It's defined as: ReUu(x) = max(0,x),
+#that is to say, ReLU(x) = 0 if(x < 0) else x
+
+#This describes a linear-like graph starting at (0,0) (although ReLu is non linear).
+#A nice property of ReLu is that is has a [0,inf) range, which means that for values of x smaller than 0, the given neuron won't activate.
+#This last bit is a nice optimization we get for free. Still, that very same property derives into the "dying ReLU problem".
+#To deal with this, we give the values of ReLU when x < 0 a little gradient; that's called leaky ReLu.
+
+#With respect to sigmoid/tahn, ReLU:
+# *Has faster convergence.
+# *Doesn't have the vanishing gradient problem.
+# *Is cheaper to compute.
+
+#Variants of ReLU.
+#As noted, leaky ReLU is an attemp to fix the "dying ReLU" problem by giving it a small slope when x < 0.
+#A further improvement is PReLU, which makes the negative slope dynamic.
+#Another version is ELU, which follows the same pattern as ReLU, but uses an exponential factor for x < 0.
+#Maxout is a generalization of ReLU/leaky ReLU, defined as: max(wT1 + b1, wT2x + b2).
+#Maxout is designed to work with the droput regularization technique.
+
+
+#Cool readings:
+#https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0
+#https://towardsdatascience.com/activation-functions-and-its-types-which-is-better-a9a5310cc8f
+#https://towardsdatascience.com/complete-guide-of-activation-functions-34076e95d044
+
 
 #endregion
 
