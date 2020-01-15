@@ -25,6 +25,9 @@
     <Compile Include="NearestNeighbor.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="NeuralFlower.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="NeuralPlayground.PythonConsole.py" />
   </ItemGroup>
   <ItemGroup>
