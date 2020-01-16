@@ -1,6 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+#Most of the code comes from Jon Como's implementation: https://github.com/JonComo/flowers/blob/master/flowers.ipynb
+#Amazing explanation in his Youtube series: https://www.youtube.com/watch?v=ZzWaow1Rvho
+
 
 #region Data.
 data = [[3,   1.5, 1],
@@ -73,6 +76,7 @@ def train():
 
         return costs, w1, w2, b
 
+costs, w1, w2, b = train()
 
 #endregion
 
