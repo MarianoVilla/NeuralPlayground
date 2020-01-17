@@ -138,12 +138,16 @@ def sigmoid(x):
 #Maxout is a generalization of ReLU/leaky ReLU, defined as: max(wT1 + b1, wT2x + b2).
 #Maxout is designed to work with the droput regularization technique.
 
+#An amazing, concise phrase on the practical issue:
+#“What neuron type should I use?” Use the ReLU non-linearity, be careful with your learning rates and possibly monitor the fraction of “dead” units in a network. 
+#If this concerns you, give Leaky ReLU or Maxout a try. Never use sigmoid. Try tanh, but expect it to work worse than ReLU/Maxout.
+
 
 #Cool readings:
 #https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0
 #https://towardsdatascience.com/activation-functions-and-its-types-which-is-better-a9a5310cc8f
 #https://towardsdatascience.com/complete-guide-of-activation-functions-34076e95d044
-
+#http://cs231n.github.io/neural-networks-1/
 
 #endregion
 

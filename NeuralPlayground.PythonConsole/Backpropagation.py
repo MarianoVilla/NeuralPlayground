@@ -24,6 +24,6 @@ def derivative_example():
     dfdx = 1.0 * dfdq # dq/dx = 1. And the multiplication here is the chain rule!
     dfdy = 1.0 * dfdq # dq/dy = 1
 
-    #This output vectos is ∇f!
+    #This output vector is ∇f!
     return dfdx, dfdy, dfdz
 
