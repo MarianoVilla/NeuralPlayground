@@ -1,5 +1,6 @@
 # neural_io.py
 # Python 3.6.5
+#Source: https://visualstudiomagazine.com/Articles/2019/07/01/modern-neural-networks.aspx?Page=1
 
 import NeuralUtil as U
 

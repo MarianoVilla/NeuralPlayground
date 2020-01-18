@@ -1,8 +1,10 @@
-
+import numpy as np
 def sigmoid(x):
     return 1/(1+np.exp(-x))
+
 def sigmoid_derivative(x):
-    return x*(1-x)
+    return sigmoid(x)*(1-sigmoid(x))
+
 def relu(x):
     return 0 if x <= 0 else x
 def leaky_relu(x):

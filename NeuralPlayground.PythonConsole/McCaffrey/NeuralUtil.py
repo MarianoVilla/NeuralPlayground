@@ -1,4 +1,5 @@
 # helper functions
+##Source: https://visualstudiomagazine.com/Articles/2019/07/01/modern-neural-networks.aspx?Page=1
 
 import numpy as np
 import os

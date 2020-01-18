@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d7d5b77c-b3a6-4b70-8463-2f0d9274c124</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NeuralPlayground.PythonConsole.py</StartupFile>
+    <StartupFile>BinaryClassifier.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -31,6 +31,9 @@
     <Compile Include="McCaffrey\NeuralIO.py" />
     <Compile Include="McCaffrey\NeuralUtil.py" />
     <Compile Include="NearestNeighbor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BinaryClassifier.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NeuralFlower.py">
