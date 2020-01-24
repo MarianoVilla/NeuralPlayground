@@ -6,6 +6,7 @@ from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten
 from keras.layers import Dense, BatchNormalization, Dropout
 from keras.preprocessing.image import ImageDataGenerator
+#
 
 path = "./data/chest_xray"
 dirs = os.listdir(path)
