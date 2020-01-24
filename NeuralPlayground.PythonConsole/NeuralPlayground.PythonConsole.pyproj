@@ -61,7 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="McCaffrey\" />
-    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="CondaEnv|CondaEnv|CondaEnv" />
