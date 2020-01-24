@@ -4,15 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d7d5b77c-b3a6-4b70-8463-2f0d9274c124</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>CNNPneumoniaDetection.py</StartupFile>
+    <StartupFile>BinaryClassifier.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>NeuralPlayground.PythonConsole</Name>
     <RootNamespace>NeuralPlayground.PythonConsole</RootNamespace>
-    <InterpreterId>Global|ContinuumAnalytics|Anaconda37-64</InterpreterId>
-    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,9 +26,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Backpropagation.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="CNNPneumoniaDetection.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="McCaffrey\NeuralIO.py" />
@@ -61,11 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="McCaffrey\" />
-    <Folder Include="Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <InterpreterReference Include="CondaEnv|CondaEnv|CondaEnv" />
-    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda37-64" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
